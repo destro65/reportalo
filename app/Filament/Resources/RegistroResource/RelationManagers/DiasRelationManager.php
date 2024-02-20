@@ -39,15 +39,15 @@ class DiasRelationManager extends RelationManager
         return $table
             ->recordTitleAttribute('description')
             ->columns([                
-                Tables\Columns\TextColumn::make('id')
-                ->label('Vuelta'),
+                // Tables\Columns\TextColumn::make('id')
+                // ->label('Vuelta'),
                 Tables\Columns\TextColumn::make('hora')
                 ,
                 Tables\Columns\TextColumn::make('serie35'),
                 Tables\Columns\TextColumn::make('serie17'),
                 Tables\Columns\TextColumn::make('serie10'),
-                Tables\Columns\TextColumn::make('vendidos'),
-                Tables\Columns\TextColumn::make('estimados.estimado'),
+                //Tables\Columns\TextColumn::make('vendidos'),
+                //Tables\Columns\TextColumn::make('estimados.estimado'),
                 
             ])
             ->filters([
