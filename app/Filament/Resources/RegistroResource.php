@@ -80,11 +80,12 @@ class RegistroResource extends Resource
             ->columns([
                 //
                 Tables\Columns\TextColumn::make('id')
-                ->label('Registro'),
+                ->label('Registro')
+                ->hidden(),
                 Tables\Columns\TextColumn::make('fecha')
                 ->searchable()
-                ->sortable(),
-                //->hidden(),
+                ->sortable()
+                ->hidden(),
                 Tables\Columns\TextColumn::make('carro.registro')
                 ->label('Unidad')
                 ->searchable(),

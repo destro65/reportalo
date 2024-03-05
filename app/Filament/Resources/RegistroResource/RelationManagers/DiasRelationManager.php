@@ -21,14 +21,17 @@ class DiasRelationManager extends RelationManager
                 Forms\Components\TextInput::make('serie35')
                     ->required()
                     ->maxLength(255)
+                    ->numeric()
                     ->columnSpanFull(),
                 Forms\Components\TextInput::make('serie17')
                     ->required()
                     ->maxLength(255)
+                    ->numeric()
                     ->columnSpanFull(),
                 Forms\Components\TextInput::make('serie10')
                     ->required()
                     ->maxLength(255)
+                    ->numeric()
                     ->columnSpanFull(),
                     
             ]);
@@ -41,8 +44,7 @@ class DiasRelationManager extends RelationManager
             ->columns([                
                 // Tables\Columns\TextColumn::make('id')
                 // ->label('Vuelta'),
-                Tables\Columns\TextColumn::make('hora')
-                ,
+                Tables\Columns\TextColumn::make('hora'),
                 Tables\Columns\TextColumn::make('serie35'),
                 Tables\Columns\TextColumn::make('serie17'),
                 Tables\Columns\TextColumn::make('serie10'),

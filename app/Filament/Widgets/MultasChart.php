@@ -39,18 +39,10 @@ class MultasChart extends ChartWidget
     {
         return 'bar';
     }
-    protected function getFilters(): ?array
-{
-    return [
-        
-        'week' => 'Semanal',
-        'month' => 'Mensual',
-        'year' => 'Anual',
-    ];
-}
+    
 public function getDescription(): ?string
 {
-    return 'El numero de multas generadas por periodos';
+    return 'El numero de multas generadas por Mes';
 }
 public function position(): array
     {
