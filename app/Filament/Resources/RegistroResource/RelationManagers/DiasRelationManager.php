@@ -33,6 +33,12 @@ class DiasRelationManager extends RelationManager
                     ->maxLength(255)
                     ->numeric()
                     ->columnSpanFull(),
+                    Forms\Components\TextInput::make('vendidos')
+                    ->required()
+                    ->maxLength(255)
+                    ->numeric()
+                    ->columnSpanFull(),
+                    
                     
             ]);
     }
@@ -48,7 +54,7 @@ class DiasRelationManager extends RelationManager
                 Tables\Columns\TextColumn::make('serie35'),
                 Tables\Columns\TextColumn::make('serie17'),
                 Tables\Columns\TextColumn::make('serie10'),
-                //Tables\Columns\TextColumn::make('vendidos'),
+                Tables\Columns\TextColumn::make('vendidos'),
                 //Tables\Columns\TextColumn::make('estimados.estimado'),
                 
             ])
